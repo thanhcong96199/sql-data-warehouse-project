@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="data-integration" name="Data Integration">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Data Integration (How tables are related)" style="text;html=1;align=left;verticalAlign=middle;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_crm" value="CRM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="18" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_erp" value="ERP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="955" y="18" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_prd" value="Product Info" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;verticalAlign=top;align=left;spacingLeft=10;fontStyle=1;fontColor=#666666;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="380" y="60" width="700" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_cust" value="Customer Info" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;verticalAlign=top;align=left;spacingLeft=10;fontStyle=1;fontColor=#666666;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="380" y="380" width="700" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_sales" value="Sales" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;verticalAlign=top;align=left;spacingLeft=10;fontStyle=1;fontColor=#666666;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="250" width="280" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="t_prd" value="&lt;b&gt;crm_prd_info&lt;/b&gt;&lt;br&gt;&lt;i&gt;Current &amp;amp; history product info&lt;/i&gt;&lt;hr&gt;&lt;div style=&quot;text-align:left&quot;&gt;prd_id (unique)&lt;br&gt;prd_key = category id + product key&lt;/div&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="400" y="95" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cat" value="&lt;b&gt;erp_px_cat_g1v2&lt;/b&gt;&lt;br&gt;&lt;i&gt;Product categories&lt;/i&gt;&lt;hr&gt;&lt;div style=&quot;text-align:left&quot;&gt;id (e.g. AC_HE)&lt;br&gt;cat, subcat, maintenance&lt;/div&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="800" y="95" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sales" value="&lt;b&gt;crm_sales_details&lt;/b&gt;&lt;br&gt;&lt;i&gt;Transactional sales records&lt;/i&gt;&lt;hr&gt;&lt;div style=&quot;text-align:left&quot;&gt;sls_ord_num + sls_prd_key (unique)&lt;br&gt;sls_prd_key&lt;br&gt;sls_cust_id&lt;/div&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="55" y="285" width="250" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cust" value="&lt;b&gt;crm_cust_info&lt;/b&gt;&lt;br&gt;&lt;i&gt;Customer details&lt;/i&gt;&lt;hr&gt;&lt;div style=&quot;text-align:left&quot;&gt;cst_id (e.g. 11000)&lt;br&gt;cst_key (e.g. AW00011000)&lt;/div&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="400" y="475" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="t_az12" value="&lt;b&gt;erp_cust_az12&lt;/b&gt;&lt;br&gt;&lt;i&gt;Extra customer info: birthdate, gender&lt;/i&gt;&lt;hr&gt;&lt;div style=&quot;text-align:left&quot;&gt;cid (e.g. NASAW00011000)&lt;/div&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="800" y="415" width="260" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="t_loc" value="&lt;b&gt;erp_loc_a101&lt;/b&gt;&lt;br&gt;&lt;i&gt;Customer location: country&lt;/i&gt;&lt;hr&gt;&lt;div style=&quot;text-align:left&quot;&gt;cid (e.g. AW-00011000)&lt;/div&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="800" y="570" width="260" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="r_sales_prd" value="sls_prd_key = prd_key&lt;br&gt;from char 7 onwards" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeColor=#555555;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="t_sales" target="t_prd">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r_sales_cust" value="sls_cust_id = cst_id&lt;br&gt;(direct match)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeColor=#555555;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="t_sales" target="t_cust">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r_cat_prd" value="id = LEFT(prd_key, 5)&lt;br&gt;with '-' replaced by '_'" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeColor=#555555;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="t_prd" target="t_cat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_az12_cust" value="cid = cst_key&lt;br&gt;after removing 'NAS' prefix" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeColor=#555555;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_cust" target="t_az12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_loc_cust" value="cid = cst_key&lt;br&gt;after removing '-'" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeColor=#555555;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_cust" target="t_loc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
